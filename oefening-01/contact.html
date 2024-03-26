@@ -63,60 +63,82 @@
 <div class="container">
   <div class="row">
     <main class="col-md-9">
-      <section id="shopintro" class="row">
+      <section id="contactdingen" class="row">
         <article class="col-12 mb-3">
           <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
           <p>Vul het registratieformulier in.<br>Velden met een <span>*</span> zijn verplicht.</p>
         </article>
         <hr>
         <h2 class="text-uppercase fs-5 fw-bolder pt-2">gegevens</h2><br>
-        <form action="#">
-            <label for="vnaam">voornaam <span>*</span></label><br>
-            <input type="text" id="vnaam" name="vnaam" value="" required><br>
-            <label for="anaam">achternaam <span>*</span></label><br>
-            <input type="text" id="anaam" name="anaam" value="" required><br>
-            <label for="mnummer">mobiel</label><br>
-            <input type="tel" id="mnummer" name="mnummer" pattern="[0-9]{10}"><br>
-            <label for="gbdatum">geboortedatum</label><br>
-            <input type="date" id="gbdatum" name="gdatum" value=""><br>
+        <form class="row g-6 mb-3 ms-0" action="#">
+            <div class="col-md-6">
+              <label for="vnaam">voornaam <span>*</span></label><br>
+              <input class="col-12" type="text" id="vnaam" name="vnaam" value="" required><br>
+            </div>
+            <div class="col-md-6">
+              <label for="anaam">achternaam <span>*</span></label><br>
+              <input class="col-12" type="text" id="anaam" name="anaam" value="" required><br>
+            </div>
+            <div class="col-sm-6">
+              <label for="mnummer">mobiel</label><br>
+              <input class="col-12" type="tel" id="mnummer" name="mnummer" pattern="[0-9]{10}"><br>
+            </div>
+            <div class="col-sm-6">
+              <label for="gbdatum">geboortedatum</label><br>
+              <input class="col-12" type="date" id="gbdatum" name="gdatum" value=""><br>
+            </div>
         </form><br>
-        <p></p>
         <h2 class="text-uppercase fs-5 fw-bolder pt-2">accountgegevens</h2><br>
-        <form action="#">
+        <form class="row g-6 mb-3 ms-0" action="#">
+          <div class="col-fluid">
             <label for="email">e-mail <span>*</span></label><br>
-            <input type="text" id="email" name="email" value="" required><br>
+            <input class="col-12" type="text" id="email" name="email" value="" required><br>
+          </div>
+          <div class="col-md-6">
             <label for="paswrd">paswoord <span>*</span></label><br>
-            <input type="password" id="paswrd" name="paswrd" value="" required><br>
+            <input class="col-12" type="password" id="paswrd" name="paswrd" value="" required><br>
+          </div>
+          <div class="col-md-6">
             <label for="passwordbvst">bevestig paswoord <span>*</span></label><br>
-            <input type="password" id="passwordbvst" name="passwordbvst" value="" required><br>
+            <input class="col-12" type="password" id="passwordbvst" name="passwordbvst" value="" required><br>
+          </div>
         </form><br>
-        <p></p>
         <h2 class="text-uppercase fs-5 fw-bolder pt-2">adresgegevens</h2><br>
-        <form action="#">
+        <form class="row g-6 mb-3 ms-0" action="#">
+          <div class="col-fluid">
             <label for="adresz">adres <span>*</span></label><br>
-            <input type="text" id="adresz" name="adresz" value="" required><br>
+            <input class="col-12" type="text" id="adresz" name="adresz" value="" required><br>
+          </div>
+          <div class="col-sm-3">
             <label for="pstcd">postcode <span>*</span></label><br>
-            <input type="text" id="pstcd" name="pstcd" value="" required><br>
+            <input class="col-12" type="text" id="pstcd" name="pstcd" value="" required><br>
+          </div>
+          <div class="col-sm-6">
             <label for="stad">stad <span>*</span></label><br>
-            <input type="text" id="stad" name="stad" value="" required><br>
+            <input class="col-12" type="text" id="stad" name="stad" value="" required><br>
+          </div>
+          <div class="col-md-3">
             <label for="landt">kies een land <span>*</span></label><br>
-            <select name="landen">
-                <option value="België">België</option>
-                <option value="Nederland">Nederland</option>
-                <option value="Zuid-Afrika">Zuid-Afrika</option>
+            <select class="col-12" name="landen">
+              <option value="België">België</option>
+              <option value="Nederland">Nederland</option>
+              <option value="Zuid-Afrika">Zuid-Afrika</option>
             </select><br>
+          </div>
         </form><br>
-        <p></p>
         <h2 class="text-uppercase fs-5 fw-bolder pt-2">koffie-achtergrond</h2><br>
-        <form action="#">
+        <form class="row g-6 mb-3 ms-0" action="#">
+          <div class="col-sm-6">
             <label for="ikkoop">ik koop</label><br>
-            <select name="ikkoop">
+            <select class="col-12 name="ikkoop">
                 <option value="koffiebonen">koffiebonen</option>
                 <option value="geld">geld</option>
                 <option value="crack">crack</option>
             </select><br>
+          </div>
+          <div class="col-sm-6">
             <label for="enbenfanvanhetmerk">en ben fan van het merk</label><br>
-            <select name="enbenfanvanhetmerk">
+            <select class="col-12 name="enbenfanvanhetmerk">
                 <option value="illy">Illy</option>
                 <option value="lavazza">Lavazza</option>
                 <option value="starbucks">Starbucks</option>
@@ -126,11 +148,12 @@
                 <option value="debank">De Bank&trade;</option>
                 <option value="blacks">Blacks&trade;</option>
             </select><br>
-            <label for="rating">hoe tevreden ben je over ons?</label>
-            <input type="range" id="rating" name="rating" min="0" max="69">
+          </div>
+          <label for="rating">hoe tevreden ben je over ons?</label>
+          <input type="range" id="rating" name="rating" min="0" max="69">
+
         </form><br>
-        <p></p>
-        <input type="submit" value="verzenden">
+        <input class="button col-2 mb-3" type="submit" value="verzenden">
         <hr>
     </main>
 
@@ -165,8 +188,6 @@
 
   </div>
 </div>
-
-<footer class="container-fluid text-center h6 small p-4">&copy; 2024 koffie enzo</footer>
+<footer class="container-fluid text-center h6 small p-4">&copy;&trade;&straightepsilon; 2024 koffie enzo</footer>
 </body>
-
 </html>
